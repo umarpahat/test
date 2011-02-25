@@ -1,0 +1,168 @@
+2011-01-20 19:12:28,593 [main] ERROR context.GrailsContextLoader  - Error executing bootstraps: Error creating bean with name 'messageSource': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost/linksharing'
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageSource': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost/linksharing'
+	at org.grails.tomcat.TomcatServer.start(TomcatServer.groovy:212)
+	at grails.web.container.EmbeddableServer$start.call(Unknown Source)
+	at _GrailsRun_groovy$_run_closure5_closure12.doCall(_GrailsRun_groovy:158)
+	at _GrailsRun_groovy$_run_closure5_closure12.doCall(_GrailsRun_groovy)
+	at _GrailsSettings_groovy$_run_closure10.doCall(_GrailsSettings_groovy:280)
+	at _GrailsSettings_groovy$_run_closure10.call(_GrailsSettings_groovy)
+	at _GrailsRun_groovy$_run_closure5.doCall(_GrailsRun_groovy:149)
+	at _GrailsRun_groovy$_run_closure5.call(_GrailsRun_groovy)
+	at _GrailsRun_groovy.runInline(_GrailsRun_groovy:116)
+	at _GrailsRun_groovy.this$4$runInline(_GrailsRun_groovy)
+	at _GrailsRun_groovy$_run_closure1.doCall(_GrailsRun_groovy:59)
+	at RunApp$_run_closure1.doCall(RunApp.groovy:33)
+	at gant.Gant$_dispatch_closure5.doCall(Gant.groovy:381)
+	at gant.Gant$_dispatch_closure7.doCall(Gant.groovy:415)
+	at gant.Gant$_dispatch_closure7.doCall(Gant.groovy)
+	at gant.Gant.withBuildListeners(Gant.groovy:427)
+	at gant.Gant.this$2$withBuildListeners(Gant.groovy)
+	at gant.Gant$this$2$withBuildListeners.callCurrent(Unknown Source)
+	at gant.Gant.dispatch(Gant.groovy:415)
+	at gant.Gant.this$2$dispatch(Gant.groovy)
+	at gant.Gant.invokeMethod(Gant.groovy)
+	at gant.Gant.executeTargets(Gant.groovy:590)
+	at gant.Gant.executeTargets(Gant.groovy:589)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost/linksharing'
+	... 23 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost/linksharing'
+	... 23 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost/linksharing'
+	... 23 more
+Caused by: org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost/linksharing'
+	... 23 more
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost/linksharing'
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1150)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
+	at $Proxy8.getMetaData(Unknown Source)
+	... 23 more
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(DriverManager.java:264)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1143)
+	... 25 more
+2011-01-20 19:13:40,368 [main] ERROR context.GrailsContextLoader  - Error executing bootstraps: Error creating bean with name 'messageSource': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost/linksharing'
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageSource': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost/linksharing'
+	at org.grails.tomcat.TomcatServer.start(TomcatServer.groovy:212)
+	at grails.web.container.EmbeddableServer$start.call(Unknown Source)
+	at _GrailsRun_groovy$_run_closure5_closure12.doCall(_GrailsRun_groovy:158)
+	at _GrailsRun_groovy$_run_closure5_closure12.doCall(_GrailsRun_groovy)
+	at _GrailsSettings_groovy$_run_closure10.doCall(_GrailsSettings_groovy:280)
+	at _GrailsSettings_groovy$_run_closure10.call(_GrailsSettings_groovy)
+	at _GrailsRun_groovy$_run_closure5.doCall(_GrailsRun_groovy:149)
+	at _GrailsRun_groovy$_run_closure5.call(_GrailsRun_groovy)
+	at _GrailsRun_groovy.runInline(_GrailsRun_groovy:116)
+	at _GrailsRun_groovy.this$4$runInline(_GrailsRun_groovy)
+	at _GrailsRun_groovy$_run_closure1.doCall(_GrailsRun_groovy:59)
+	at RunApp$_run_closure1.doCall(RunApp.groovy:33)
+	at gant.Gant$_dispatch_closure5.doCall(Gant.groovy:381)
+	at gant.Gant$_dispatch_closure7.doCall(Gant.groovy:415)
+	at gant.Gant$_dispatch_closure7.doCall(Gant.groovy)
+	at gant.Gant.withBuildListeners(Gant.groovy:427)
+	at gant.Gant.this$2$withBuildListeners(Gant.groovy)
+	at gant.Gant$this$2$withBuildListeners.callCurrent(Unknown Source)
+	at gant.Gant.dispatch(Gant.groovy:415)
+	at gant.Gant.this$2$dispatch(Gant.groovy)
+	at gant.Gant.invokeMethod(Gant.groovy)
+	at gant.Gant.executeTargets(Gant.groovy:590)
+	at gant.Gant.executeTargets(Gant.groovy:589)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost/linksharing'
+	... 23 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost/linksharing'
+	... 23 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost/linksharing'
+	... 23 more
+Caused by: org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost/linksharing'
+	... 23 more
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost/linksharing'
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1150)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
+	at $Proxy8.getMetaData(Unknown Source)
+	... 23 more
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(DriverManager.java:264)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1143)
+	... 25 more
+2011-01-20 19:16:25,511 [main] ERROR context.GrailsContextLoader  - Error executing bootstraps: Error creating bean with name 'messageSource': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/linksharing'
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageSource': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/linksharing'
+	at org.grails.tomcat.TomcatServer.start(TomcatServer.groovy:212)
+	at grails.web.container.EmbeddableServer$start.call(Unknown Source)
+	at _GrailsRun_groovy$_run_closure5_closure12.doCall(_GrailsRun_groovy:158)
+	at _GrailsRun_groovy$_run_closure5_closure12.doCall(_GrailsRun_groovy)
+	at _GrailsSettings_groovy$_run_closure10.doCall(_GrailsSettings_groovy:280)
+	at _GrailsSettings_groovy$_run_closure10.call(_GrailsSettings_groovy)
+	at _GrailsRun_groovy$_run_closure5.doCall(_GrailsRun_groovy:149)
+	at _GrailsRun_groovy$_run_closure5.call(_GrailsRun_groovy)
+	at _GrailsRun_groovy.runInline(_GrailsRun_groovy:116)
+	at _GrailsRun_groovy.this$4$runInline(_GrailsRun_groovy)
+	at _GrailsRun_groovy$_run_closure1.doCall(_GrailsRun_groovy:59)
+	at RunApp$_run_closure1.doCall(RunApp.groovy:33)
+	at gant.Gant$_dispatch_closure5.doCall(Gant.groovy:381)
+	at gant.Gant$_dispatch_closure7.doCall(Gant.groovy:415)
+	at gant.Gant$_dispatch_closure7.doCall(Gant.groovy)
+	at gant.Gant.withBuildListeners(Gant.groovy:427)
+	at gant.Gant.this$2$withBuildListeners(Gant.groovy)
+	at gant.Gant$this$2$withBuildListeners.callCurrent(Unknown Source)
+	at gant.Gant.dispatch(Gant.groovy:415)
+	at gant.Gant.this$2$dispatch(Gant.groovy)
+	at gant.Gant.invokeMethod(Gant.groovy)
+	at gant.Gant.executeTargets(Gant.groovy:590)
+	at gant.Gant.executeTargets(Gant.groovy:589)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/linksharing'
+	... 23 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/linksharing'
+	... 23 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/linksharing'
+	... 23 more
+Caused by: org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/linksharing'
+	... 23 more
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/linksharing'
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1150)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
+	at $Proxy8.getMetaData(Unknown Source)
+	... 23 more
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(DriverManager.java:264)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1143)
+	... 25 more
+2011-01-20 19:18:10,935 [main] ERROR context.GrailsContextLoader  - Error executing bootstraps: Error creating bean with name 'messageSource': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/linksharing'
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageSource': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/linksharing'
+	at org.grails.tomcat.TomcatServer.start(TomcatServer.groovy:212)
+	at grails.web.container.EmbeddableServer$start.call(Unknown Source)
+	at _GrailsRun_groovy$_run_closure5_closure12.doCall(_GrailsRun_groovy:158)
+	at _GrailsRun_groovy$_run_closure5_closure12.doCall(_GrailsRun_groovy)
+	at _GrailsSettings_groovy$_run_closure10.doCall(_GrailsSettings_groovy:280)
+	at _GrailsSettings_groovy$_run_closure10.call(_GrailsSettings_groovy)
+	at _GrailsRun_groovy$_run_closure5.doCall(_GrailsRun_groovy:149)
+	at _GrailsRun_groovy$_run_closure5.call(_GrailsRun_groovy)
+	at _GrailsRun_groovy.runInline(_GrailsRun_groovy:116)
+	at _GrailsRun_groovy.this$4$runInline(_GrailsRun_groovy)
+	at _GrailsRun_groovy$_run_closure1.doCall(_GrailsRun_groovy:59)
+	at RunApp$_run_closure1.doCall(RunApp.groovy:33)
+	at gant.Gant$_dispatch_closure5.doCall(Gant.groovy:381)
+	at gant.Gant$_dispatch_closure7.doCall(Gant.groovy:415)
+	at gant.Gant$_dispatch_closure7.doCall(Gant.groovy)
+	at gant.Gant.withBuildListeners(Gant.groovy:427)
+	at gant.Gant.this$2$withBuildListeners(Gant.groovy)
+	at gant.Gant$this$2$withBuildListeners.callCurrent(Unknown Source)
+	at gant.Gant.dispatch(Gant.groovy:415)
+	at gant.Gant.this$2$dispatch(Gant.groovy)
+	at gant.Gant.invokeMethod(Gant.groovy)
+	at gant.Gant.executeTargets(Gant.groovy:590)
+	at gant.Gant.executeTargets(Gant.groovy:589)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/linksharing'
+	... 23 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/linksharing'
+	... 23 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/linksharing'
+	... 23 more
+Caused by: org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/linksharing'
+	... 23 more
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/linksharing'
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1150)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
+	at $Proxy8.getMetaData(Unknown Source)
+	... 23 more
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(DriverManager.java:264)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1143)
+	... 25 more

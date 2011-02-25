@@ -1,0 +1,77 @@
+@CHARSET "UTF-8";
+
+.jquery-selectbox {
+	position: relative;
+	height: 14px;
+	width: 100px;
+	z-index: 0;
+	float: left;
+	display: inline;
+	font-size: 12px; 
+	font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif; 
+}
+
+.jquery-selectbox.selecthover {
+	z-index: 700;
+}	
+.jquery-selectbox .jquery-selectbox-currentItem {
+	white-space: nowrap;
+	display: block;
+	overflow: hidden;
+}
+.jquery-selectbox-currentItem:hover { cursor: pointer; }
+.jquery-selectbox .jquery-selectbox-list {
+	display: none;
+	position: absolute;
+	top: 14px;
+	padding: 2px;
+	left: 0px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 1000;
+	background: #fff;
+}
+
+.jquery-selectbox .jquery-selectbox-moreButton {
+	/*
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	*/
+	float: right;
+	cursor: pointer;
+}
+.jquery-selectbox .jquery-selectbox-moreButton.morebuttonhover {
+	
+}
+
+.jquery-selectbox .jquery-selectbox-item.listelementhover {
+	cursor: pointer;
+	
+}
+.jquery-selectbox .jquery-selectbox-item {
+	display: block;
+	cursor: default;
+	padding: 2px;
+}
+
+/** ERROR classes **/
+form .error .jquery-selectbox {
+	color: #d00;
+}
+
+.search-form .jquery-selectbox { margin: -2px 11px 0 0; padding: 0; color: #000; }
+.search-form .jquery-selectbox .jquery-selectbox-list {	width: 100px; height: 47px !important; top: 14px; border: 1px solid #d1dae2; }
+.search-form .jquery-selectbox .jquery-selectbox-moreButton { background: url(images/drop-down.gif); width: 14px; height: 14px; }
+.search-form .jquery-selectbox .jquery-selectbox-item.listelementhover { background: #d1dae2; color: #fff; }
+
+.tabs-cat .jquery-selectbox { margin-left: 6px; color: #b4e400; background: url(images/tabs-cat-dropdown.png) no-repeat 0 0; width: 96px !important; height: 28px; padding: 0 0 4px 14px; line-height: 22px; }
+.tabs-cat .jquery-selectbox .jquery-selectbox-list { width: 102px !important; height: 47px !important; top: 22px; background: #000; border: 2px solid #fff; color: #fff; line-height: 15px; }
+.tabs-cat .jquery-selectbox .jquery-selectbox-moreButton { background: url(images/drop-arrow.gif); width: 22px; height: 24px; }
+.tabs-cat .jquery-selectbox .jquery-selectbox-item.listelementhover { color: #b4e400; }
+
+.small-gbox-form .jquery-selectbox { background: url(images/small-gbox-drop.gif) no-repeat 0 0; width: 85px !important; height: 30px !important; font-size: 15px; line-height: 21px; color: #fff; margin: 10px 0 0 56px; }
+.small-gbox-form .jquery-selectbox .jquery-selectbox-list {	width: 75px !important; height: 75px !important; top: 26px; border: 1px solid #000; background: #000; color: #fff; }
+.small-gbox-form .jquery-selectbox .jquery-selectbox-currentItem { height: 26px; padding-left: 15px; text-align: center ;}
+.small-gbox-form .jquery-selectbox .jquery-selectbox-moreButton { background: url(images/small-gbox-btn.gif); width: 21px; height: 30px; }
+.small-gbox-form .jquery-selectbox .jquery-selectbox-item.listelementhover { background: #fff; color: #000; }

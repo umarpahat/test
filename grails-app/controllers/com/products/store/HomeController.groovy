@@ -4,7 +4,7 @@ class HomeController {
 
     def index = {
 
-    redirect(action:'index')
+//    redirect(action:'index')
 
     }
 }

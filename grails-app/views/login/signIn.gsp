@@ -20,7 +20,7 @@
           <tr>
             <td align="center" valign="top">
               <div class="enterPrizes">
-                <g:form method="post" name="login_form">
+                <g:form method="post" action="signIn" name="login_form">
                   <table width="100%" border="0" cellspacing="5" cellpadding="4" align="center">
                     <tr>
                       <td align="right" valign="middle">&nbsp;</td>
@@ -46,7 +46,7 @@
                     <tr>
                       <td>&nbsp;</td>
                       <td>
-                        <g:actionSubmit name="button"  onclick="return validateForm()" value="Login"/>
+                        <g:submitButton name="button" value="Login"/>
                       </td>
                     </tr>
                   </table>
@@ -66,11 +66,11 @@
   </table>
 </div>
 <script type="text/javascript">
-  function validateForm(){
-    var email=jQuery('#login_form').validate().element('#email');
-    var password=jQuery('#login_form').validate().element('#password');
-    return email && password;
-  }
+
+  jQuery(function (){
+     jQuery('#login_form').validate()
+  });
+
 </script>
 </body>
 </html>

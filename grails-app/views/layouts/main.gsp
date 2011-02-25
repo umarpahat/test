@@ -16,7 +16,14 @@
     <body>
     <div id="container">
       <g:render template="/layouts/header" />
-   <div id="mess"></div>
+  <div id="mess"> <g:if test="${flash.message}">
+    <div class="message">${flash.message}</div>
+  </g:if>
+  <g:hasErrors bean="${userInstance}">
+    <div class="errors">
+      <g:renderErrors bean="${userInstance}" as="list"/>
+    </div>
+  </g:hasErrors></div>
       <g:layoutBody />
       <g:render template="/layouts/footer"/>
       </div>

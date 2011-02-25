@@ -15,7 +15,7 @@
               Welcome : ${session?.user.firstName} ${session?.user.lastName} |  <g:link controller="login" action="logout" class="gray"><g:message code="user.logout.label" default="Logout"/></g:link>
             </g:if>
             <g:else>
-              <g:link controller="login" class="gray">Sign In</g:link> &nbsp; |   &nbsp; <a href="#"  id="singUp" class="gray">Sign Up</a>
+              <g:link controller="login" action="signIn" class="gray">Sign In</g:link> &nbsp; |   &nbsp; <a href="#"  id="singUp" class="gray">Sign Up</a>
             </g:else>
           &nbsp;   <a href="#" class="blue cart">Cart(<span class="black">1</span>)</a></td>
         </tr>
@@ -25,7 +25,7 @@
       <td height="110" valign="bottom">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td width="30%" height="110" align="left" valign="middle"><a href="#"><img src="${resource(dir: 'images', file: 'logo.png')}" alt="ProdStore" border="0"/></a></td>
+          <td width="30%" height="110" align="left" valign="middle"><a href="${createLink(controller:'home', action:'index')}"  ><img src="${resource(dir: 'images', file: 'logo.png')}" alt="ProdStore" border="0"/></a></td>
           <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
               <td height="55" align="right" valign="middle">

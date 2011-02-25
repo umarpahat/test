@@ -143,8 +143,279 @@
           </tr>
           <tr>
             <td align="center" valign="top">
-              %{--<g:render template="enterPrize/enterPrize" />--}%
-              %{--<g:render template="enterPrize/enterPrize" />--}%
+              <div class="enterPrizes">
+ <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" valign="middle"><h2 class="fontSide18 black"> Top-Selling Enterprise Solutions</h2></td>
+    <td width="15%" align="right" valign="middle" class="gray product">Viewing
+    1-5 of  14</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="50" align="center" valign="middle"><img src="${resource(dir:'images', file:'previous-inactive.png')}" width="15" height="22" /></td>
+    <td align="center" valign="middle"><div id="slideBox"><table width="100%" border="0" cellspacing="3" cellpadding="0" class="product">
+      <tr>
+        <td width="120" align="center" valign="middle" ><table width="100%" border="0" cellspacing="3" cellpadding="0" >
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'pc.png')}" alt="Pc" width="100" height="100" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="leftMenu blue"><strong>PowerEdge 11001</strong></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'inactive-star.png')}" width="16" height="16" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="gray fontSide11">(14 Reviews)</a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="black fontSide13">
+              Starting at  			  				</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="green leftMenu"><strong>$399.00 </strong></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle">&nbsp;</td>
+          </tr>
+        </table></td>
+        <td width="120" align="center" valign="middle"><table width="100%" border="0" cellspacing="3" cellpadding="0">
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'pc.png')}" alt="Pc" width="100" height="100" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="leftMenu blue"><strong>PowerEdge 11001</strong></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'inactive-star.png')}" width="16" height="16" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="gray fontSide11">(14 Reviews)</a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="black fontSide13"> Starting at </td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="green leftMenu"><strong>$399.00 </strong></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle">&nbsp;</td>
+          </tr>
+        </table></td>
+        <td width="120" align="center" valign="middle"><table width="100%" border="0" cellspacing="3" cellpadding="0">
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'pc.png')}" alt="Pc" width="100" height="100" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="leftMenu blue"><strong>PowerEdge 11001</strong></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'inactive-star.png')}" width="16" height="16" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="gray fontSide11">(14 Reviews)</a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="black fontSide13"> Starting at </td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="green leftMenu"><strong>$399.00 </strong></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle">&nbsp;</td>
+          </tr>
+        </table></td>
+        <td width="120" align="center" valign="middle"><table width="100%" border="0" cellspacing="3" cellpadding="0">
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'pc.png')}" alt="Pc" width="100" height="100" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="leftMenu blue"><strong>PowerEdge 11001</strong></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'inactive-star.png')}" width="16" height="16" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="gray fontSide11">(14 Reviews)</a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="black fontSide13"> Starting at </td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="green leftMenu"><strong>$399.00 </strong></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle">&nbsp;</td>
+          </tr>
+        </table></td>
+        <td width="120" align="center" valign="middle"><table width="100%" border="0" cellspacing="3" cellpadding="0">
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'pc.png')}" alt="Pc" width="100" height="100" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="leftMenu blue"><strong>PowerEdge 11001</strong></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'inactive-star.png')}" width="16" height="16" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="gray fontSide11">(14 Reviews)</a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="black fontSide13"> Starting at </td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="green leftMenu"><strong>$399.00 </strong></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle">&nbsp;</td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table></div>
+    </td>
+    <td width="50" align="center" valign="middle"><img src="${resource(dir:'images', file:'next-active.png')}" width="15" height="22" /></td>
+  </tr>
+</table>
+ </div> <div class="enterPrizes">
+ <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" valign="middle"><h2 class="fontSide18 black"> Top-Selling Enterprise Solutions</h2></td>
+    <td width="15%" align="right" valign="middle" class="gray product">Viewing
+    1-5 of  14</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="50" align="center" valign="middle"><img src="${resource(dir:'images', file:'previous-inactive.png')}" width="15" height="22" /></td>
+    <td align="center" valign="middle"><div id="slideBox"><table width="100%" border="0" cellspacing="3" cellpadding="0" class="product">
+      <tr>
+        <td width="120" align="center" valign="middle" ><table width="100%" border="0" cellspacing="3" cellpadding="0" >
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'pc.png')}" alt="Pc" width="100" height="100" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="leftMenu blue"><strong>PowerEdge 11001</strong></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'inactive-star.png')}" width="16" height="16" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="gray fontSide11">(14 Reviews)</a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="black fontSide13">
+              Starting at  			  				</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="green leftMenu"><strong>$399.00 </strong></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle">&nbsp;</td>
+          </tr>
+        </table></td>
+        <td width="120" align="center" valign="middle"><table width="100%" border="0" cellspacing="3" cellpadding="0">
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'pc.png')}" alt="Pc" width="100" height="100" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="leftMenu blue"><strong>PowerEdge 11001</strong></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'inactive-star.png')}" width="16" height="16" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="gray fontSide11">(14 Reviews)</a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="black fontSide13"> Starting at </td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="green leftMenu"><strong>$399.00 </strong></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle">&nbsp;</td>
+          </tr>
+        </table></td>
+        <td width="120" align="center" valign="middle"><table width="100%" border="0" cellspacing="3" cellpadding="0">
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'pc.png')}" alt="Pc" width="100" height="100" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="leftMenu blue"><strong>PowerEdge 11001</strong></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'inactive-star.png')}" width="16" height="16" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="gray fontSide11">(14 Reviews)</a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="black fontSide13"> Starting at </td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="green leftMenu"><strong>$399.00 </strong></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle">&nbsp;</td>
+          </tr>
+        </table></td>
+        <td width="120" align="center" valign="middle"><table width="100%" border="0" cellspacing="3" cellpadding="0">
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'pc.png')}" alt="Pc" width="100" height="100" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="leftMenu blue"><strong>PowerEdge 11001</strong></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'inactive-star.png')}" width="16" height="16" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="gray fontSide11">(14 Reviews)</a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="black fontSide13"> Starting at </td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="green leftMenu"><strong>$399.00 </strong></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle">&nbsp;</td>
+          </tr>
+        </table></td>
+        <td width="120" align="center" valign="middle"><table width="100%" border="0" cellspacing="3" cellpadding="0">
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'pc.png')}" alt="Pc" width="100" height="100" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="leftMenu blue"><strong>PowerEdge 11001</strong></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#"><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'star.png')}" width="16" height="16" border="0" /><img src="${resource(dir:'images', file:'inactive-star.png')}" width="16" height="16" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><a href="#" class="gray fontSide11">(14 Reviews)</a></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="black fontSide13"> Starting at </td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" class="green leftMenu"><strong>$399.00 </strong></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle">&nbsp;</td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table></div>
+    </td>
+    <td width="50" align="center" valign="middle"><img src="${resource(dir:'images', file:'next-active.png')}" width="15" height="22" /></td>
+  </tr>
+</table>
+ </div>
               <div class="enterPrizes"><img src="${resource(dir:'images', file:'add-banner.png')}" alt="Banner" width="736" height="109" /> </div>
             </td>
           </tr>

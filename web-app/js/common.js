@@ -10,3 +10,4 @@ jQuery(function(){
         return false
     })
 })
+jQuery('.mess')

@@ -46,7 +46,7 @@
                     <tr>
                       <td>&nbsp;</td>
                       <td>
-                        <g:submitButton name="button"  action="signIn"  onclick="return validateForm()" value="Login"/>
+                        <g:actionSubmit name="button"  onclick="return validateForm()" value="Login"/>
                       </td>
                     </tr>
                   </table>

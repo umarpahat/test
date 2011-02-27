@@ -20,10 +20,13 @@ class UserController {
     }
 
     def save = {
+        println params
         def userInstance = new User(params)
+        userInstance.password = params.password.encodeAsPassword()
+        userInstance.confirm  = params.confirm.encodeAsPassword()
         if (userInstance.save(flush: true)) {
-            flash.message = "${message(code: 'default.created.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])}"
-            redirect(action: "show", id: userInstance.id)
+//            flash.message = "${message(code: 'default.created.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])}"
+            redirect(controller: 'login', action: "signIn", id: userInstance.id)
         }
         else {
             render(view: "list", model: [userInstance: userInstance])

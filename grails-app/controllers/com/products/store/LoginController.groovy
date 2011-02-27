@@ -4,10 +4,10 @@ class LoginController {
     if (session.user) {
       redirect(controller: 'home', action: 'index')
     } else {
-      if (request.get) {
+      if(request.get) {
       }
       else {
-        User user = User.findByEmailAndPassword(params.email, params.password)
+        User user = User.findByEmailAndPassword(params.email, params.password.encodeAsPassword())
         println params
         println user
         if (user) {
@@ -26,5 +26,9 @@ class LoginController {
     session.user = ''
     flash.message = "Succefully Log out"
     redirect(action: 'signIn')
+  }
+  def forgotPassword = {
+
+
   }
 }

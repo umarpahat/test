@@ -25,7 +25,7 @@
       <td height="110" valign="bottom">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td width="30%" height="110" align="left" valign="middle"><a href="${createLink(controller:'home', action:'index')}"  ><img src="${resource(dir: 'images', file: 'logo.png')}" alt="ProdStore" border="0"/></a></td>
+          <td width="30%" height="110" align="left" valign="middle"><a href="${createLink(url: '/prodStore')}"  ><img src="${resource(dir: 'images', file: 'logo.png')}" alt="ProdStore" border="0"/></a></td>
           <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
               <td height="55" align="right" valign="middle">

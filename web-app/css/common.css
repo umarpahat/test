@@ -44,7 +44,7 @@ a.leftMenu:hover{color:#000;}
 .fontSide11{font-size:11px;}
 .fontSide13{font-size:13px;}
 .fontSide18{font-size:18px;}
-.formPanel{position:absolute; top:25px; width:250px; background:#ffffff; border:3px solid #66CC00; right:10px; z-index:5;}
+.formPanel{position:absolute; top:25px; width:350px; background:#ffffff; border:3px solid #66CC00; right:10px; z-index:5;}
 .formPanel td{font-size:11px; }
 .formPanel td input{font-size:11px; }
 .formPanel td select{font-size:11px; }

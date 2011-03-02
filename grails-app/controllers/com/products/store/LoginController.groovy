@@ -28,7 +28,7 @@ class LoginController {
     redirect(action: 'signIn')
   }
   def forgotPassword = {
-
-
+//    User user = User.findByEmail(params.email)
+    flash.message = "Sent request your mail"
   }
 }

@@ -41,7 +41,7 @@
                     <tr>
                       <td align="right" valign="middle"></td>
                       <td align="left" valign="middle"><label>
-                        <g:checkBox name="loginRemember" value="${true}"/> Remember me</label>  &nbsp; |  &nbsp; <a href="${createLink(controller:'login', action:'forgotPassword' )}"  class="gray">forgot password</a></label></td>
+                        <g:checkBox name="loginRemember" value="${true}"/> Remember me</label>  &nbsp; |  &nbsp;  <g:link controller="login" action="forgotPassword"  class="gray">forgot password </g:link> </label></td>
                     </tr>
                     <tr>
                       <td>&nbsp;</td>

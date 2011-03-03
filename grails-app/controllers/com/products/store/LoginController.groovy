@@ -4,7 +4,7 @@ class LoginController {
     if (session.user) {
       redirect(controller: 'home', action: 'index')
     } else {
-      if(request.get) {
+      if (request.get) {
       }
       else {
         User user = User.findByEmailAndPassword(params.email, params.password.encodeAsPassword())
@@ -28,7 +28,25 @@ class LoginController {
     redirect(action: 'signIn')
   }
   def forgotPassword = {
-//    User user = User.findByEmail(params.email)
-    flash.message = "Sent request your mail"
+    if (session.user) {
+      redirect(controller: 'home', action: 'index')
+    } else {
+      if (params.email) {
+        User user = User.findByEmail(params.email)
+        println params
+        if (user) {
+          sendMail {
+            to user.email
+            subject message(code: "LoginController.mail.forgot.subject")
+            body "check Your email"
+          }
+          flash.message = "Your password reset email was sent  - check Your email "
+        }
+        else {
+          flash.message = "User Not found"
+
+        }
+      }
+    }
   }
 }

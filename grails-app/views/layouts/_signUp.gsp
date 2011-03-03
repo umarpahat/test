@@ -59,7 +59,7 @@
           <label for="city"><g:message code="user.city.label" default="City"/></label>
         </td>
         <td valign="top" class="value ${hasErrors(bean: userInstance, field: 'city', 'errors')}">
-          <g:textField name="city" value="${userInstance?.city}"/>
+          <g:textField name="city" class="required"  value="${userInstance?.city}"/>
         </td>
       </tr>
       <tr class="prop">

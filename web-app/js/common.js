@@ -8,5 +8,5 @@ jQuery(function(){
         jQuery('#register').hide();
         jQuery('#forgotpassword').show();
         return false
-    })
-});
+    });
+    });

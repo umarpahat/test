@@ -1,0 +1,6 @@
+# /
+/target
+.idea/
+test-grailsPlugins.iml
+test.iml
+

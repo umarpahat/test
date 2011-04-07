@@ -23,7 +23,7 @@ class UserController {
         println params
         def userInstance = new User(params)
         userInstance.password = params.password.encodeAsPassword()
-        userInstance.confirm  = params.confirm.encodeAsPassword()
+        userInstance.confirm = params.confirm.encodeAsPassword()
         if (userInstance.save(flush: true)) {
 //            flash.message = "${message(code: 'default.created.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])}"
             redirect(controller: 'login', action: "signIn", id: userInstance.id)
@@ -61,7 +61,7 @@ class UserController {
             if (params.version) {
                 def version = params.version.toLong()
                 if (userInstance.version > version) {
-                    
+
                     userInstance.errors.rejectValue("version", "default.optimistic.locking.failure", [message(code: 'user.label', default: 'User')] as Object[], "Another user has updated this User while you were editing")
                     render(view: "edit", model: [userInstance: userInstance])
                     return
@@ -99,5 +99,11 @@ class UserController {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'user.label', default: 'User'), params.id])}"
             redirect(action: "list")
         }
+    }
+
+    def showImage = {
+        User user = User.get(params.id)
+        response.setContentType("image/png")
+        response.outputStream << user.image
     }
 }

@@ -12,7 +12,8 @@
           </table></td>
           <td align="right" valign="middle" class="fontSide11">
             <g:if test="${session?.user}">
-              Welcome : ${session?.user.firstName} ${session?.user.lastName} |  <g:link controller="login" action="logout" class="gray"><g:message code="user.logout.label" default="Logout"/></g:link>
+
+              Welcome : ${session?.user.firstName} ${session?.user.lastName} <img src="${createLink(controller:'user', action:'showImage', id:1)}" width="15" align="middle" height="15" style="border:2px solid #ddd" /> |  <g:link controller="login" action="logout" class="gray"><g:message code="user.logout.label" default="Logout"/></g:link>
             </g:if>
             <g:else>
               <g:link controller="login" action="signIn" class="gray">Sign In</g:link> &nbsp; |   &nbsp; <a href="#"  id="singUp" class="gray">Sign Up</a>
@@ -23,6 +24,7 @@
     </tr>
     <tr>
       <td height="110" valign="bottom">
+
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
           <td width="30%" height="110" align="left" valign="middle"><a href="${createLink(url: '/prodStore')}"  ><img src="${resource(dir: 'images', file: 'logo.png')}" alt="ProdStore" border="0"/></a></td>

@@ -1,0 +1,9 @@
+Java HotSpot(TM) 64-Bit Server VM (build 19.1-b02, mixed mode)
+Fatal error parsing XML: java.net.SocketTimeoutException: Read timed out
+org.apache.xmlrpc.ParseFailed: java.net.SocketTimeoutException: Read timed out
+Fatal error parsing XML: java.net.SocketTimeoutException: Read timed out
+org.apache.xmlrpc.ParseFailed: java.net.SocketTimeoutException: Read timed out
+Fatal error parsing XML: java.net.SocketTimeoutException: Read timed out
+org.apache.xmlrpc.ParseFailed: java.net.SocketTimeoutException: Read timed out
+Fatal error parsing XML: java.net.SocketTimeoutException: Read timed out
+org.apache.xmlrpc.ParseFailed: java.net.SocketTimeoutException: Read timed out

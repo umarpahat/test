@@ -1,5 +1,5 @@
 <div id="register" class="formPanel">
-<g:form controller="user" method="post" name="signUpForm" action="save">
+<g:uploadForm controller="user" method="post" name="signUpForm" action="save">
   <div class="dialog">
     <table width="100%" border="0" cellspacing="0" cellpadding="4">
       <tbody>
@@ -86,6 +86,14 @@
           <g:textField name="email" class="required email" value="${userInstance?.email}"/>
         </td>
       </tr>
+         <tr class="prop">
+        <td valign="top" class="name">
+          <label for="email"><g:message code="user.email.label" default="Photo"/></label>
+        </td>
+        <td valign="top">
+          <input type="file" name="image" class="required" value="${userInstance?.image}"/>
+        </td>
+      </tr>
       <tr>
         <td colspan="2" align="center"><div class="buttons">
           <span class="button"><g:submitButton name="create" class="save" value="${message(code: 'default.button.submit.label', default: 'Submit')}"/></span>
@@ -94,19 +102,14 @@
       </tbody>
     </table>
   </div>
-</g:form>
+</g:uploadForm>
 </div>
 <script type="text/javascript">
   jQuery(function (){
     jQuery('#signUpForm').validate({
       submitHandler: function(form) {
-         // some other code
-         // maybe disabling submit button
-         // then:
          form.submit();
        }
-
     });
   });
-
 </script>

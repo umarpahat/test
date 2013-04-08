@@ -1,5 +1,6 @@
 # /
 /target
+/WEB-INF/
 .idea/
 test-grailsPlugins.iml
 test.iml
